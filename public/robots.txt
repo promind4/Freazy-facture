@@ -6,6 +6,4 @@ User-agent: *
 Allow: /
 
 # Indiquer l'emplacement du sitemap
-Sitemap: https://freazy.vercel.app/sitemap.xml
-
-# Note: Mettre à jour l'URL du sitemap une fois le domaine final configuré
+Sitemap: https://freazy.site/sitemap.xml

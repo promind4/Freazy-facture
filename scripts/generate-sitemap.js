@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const SITE_URL = process.env.SITE_URL || 'https://freazy.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://freazy.site';
 
 // Définition des pages avec leurs priorités SEO
 const pages = [
