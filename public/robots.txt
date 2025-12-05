@@ -1,0 +1,11 @@
+# Robots.txt pour Freazy
+# Fichier de configuration pour les robots d'indexation (Google, Bing, etc.)
+
+# Autoriser tous les robots à explorer tout le site
+User-agent: *
+Allow: /
+
+# Indiquer l'emplacement du sitemap
+Sitemap: https://freazy.vercel.app/sitemap.xml
+
+# Note: Mettre à jour l'URL du sitemap une fois le domaine final configuré
