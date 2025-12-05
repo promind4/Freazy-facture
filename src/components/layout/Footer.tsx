@@ -26,7 +26,7 @@ export function Footer() {
             <div className="container mx-auto px-4 flex flex-col items-center justify-center text-center space-y-6">
 
                 {/* Line 1: Reassurance */}
-                <p className="text-sm text-muted-foreground whitespace-nowrap">
+                <p className="text-sm text-muted-foreground text-center px-2">
                     {t.footerReassurance}
                 </p>
 
