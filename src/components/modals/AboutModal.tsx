@@ -13,7 +13,7 @@ export function AboutModal() {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button variant="ghost" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                <Button variant="ghost" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors min-h-[44px] px-3 py-2">
                     Pourquoi c'est gratuit ?
                 </Button>
             </DialogTrigger>

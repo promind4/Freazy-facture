@@ -1,5 +1,6 @@
 import { i18n, type Language } from "@/lib/i18n";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
     const [language, setLanguage] = useState<Language>('fr');
@@ -30,23 +31,23 @@ export function Footer() {
                     {t.footerReassurance}
                 </p>
 
-                {/* Line 2: Legal Links - Using standard anchor tags for reliable navigation */}
+                {/* Line 2: Legal Links - Using React Router Link for SPA navigation */}
                 <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-muted-foreground">
-                    <a href="/aide" className="hover:text-violet-600 transition-colors">
+                    <Link to="/aide" className="hover:text-violet-600 transition-colors min-h-[44px] flex items-center">
                         {t.footerHelpCenter}
-                    </a>
+                    </Link>
                     <span className="hidden md:inline">•</span>
-                    <a href="/aide?open=mentions" className="hover:text-violet-600 transition-colors">
+                    <Link to="/aide?open=mentions" className="hover:text-violet-600 transition-colors min-h-[44px] flex items-center">
                         {t.footerLegalMentions}
-                    </a>
+                    </Link>
                     <span className="hidden md:inline">•</span>
-                    <a href="/aide?open=privacy" className="hover:text-violet-600 transition-colors">
+                    <Link to="/aide?open=privacy" className="hover:text-violet-600 transition-colors min-h-[44px] flex items-center">
                         {t.footerPrivacyPolicy}
-                    </a>
+                    </Link>
                     <span className="hidden md:inline">•</span>
-                    <a href="/aide?open=terms" className="hover:text-violet-600 transition-colors">
+                    <Link to="/aide?open=terms" className="hover:text-violet-600 transition-colors min-h-[44px] flex items-center">
                         {t.footerTerms}
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Line 3: Copyright */}

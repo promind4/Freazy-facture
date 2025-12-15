@@ -40,14 +40,14 @@ export function Header() {
                 </div>
 
                 {/* Right Zone: Reassurance Badge */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 md:gap-4">
                     <AboutModal />
-                    <a href="/aide" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                    <a href="/aide" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
                         {t.helpCenter}
                     </a>
-                    <div className="flex items-center gap-2 rounded-full bg-emerald-50/80 px-3 py-1.5 text-emerald-700 ring-1 ring-emerald-100/50 backdrop-blur-sm">
-                        <ShieldCheck className="h-4 w-4" />
-                        <span className="text-xs font-semibold">{t.securityBadge}</span>
+                    <div className="flex items-center gap-1.5 md:gap-2 rounded-full bg-emerald-50/80 px-2 md:px-3 py-1.5 text-emerald-700 ring-1 ring-emerald-100/50 backdrop-blur-sm">
+                        <ShieldCheck className="h-4 w-4 flex-shrink-0" />
+                        <span className="text-xs font-semibold whitespace-nowrap">{t.securityBadge}</span>
                     </div>
                 </div>
             </div>
