@@ -42,7 +42,7 @@ export function Header() {
                 {/* Right Zone: Reassurance Badge */}
                 <div className="flex items-center gap-4">
                     <AboutModal />
-                    <a href="/aide" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                    <a href="/aide" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
                         {t.helpCenter}
                     </a>
                     <div className="flex items-center gap-2 rounded-full bg-emerald-50/80 px-3 py-1.5 text-emerald-700 ring-1 ring-emerald-100/50 backdrop-blur-sm">
