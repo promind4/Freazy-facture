@@ -41,7 +41,9 @@ export function Header() {
 
                 {/* Right Zone: Reassurance Badge */}
                 <div className="flex items-center gap-2 md:gap-4">
-                    <AboutModal />
+                    <div className="hidden md:block">
+                        <AboutModal />
+                    </div>
                     <a href="/aide" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
                         {t.helpCenter}
                     </a>
