@@ -138,8 +138,9 @@ export function InvoiceForm({ onUpdate }: InvoiceFormProps) {
     const [currentDraft, setCurrentDraft] = useLocalStorage<any | null>("current_draft", null);
     const [isSaving, setIsSaving] = useState(false);
 
-    // Detect browser language
+    // Detect browser language (SSR-safe)
     const getBrowserLanguage = (): Language => {
+        if (typeof navigator === 'undefined') return 'fr';
         const lang = navigator.language.split('-')[0];
         return (['fr', 'en', 'es', 'it', 'de', 'pt'].includes(lang) ? lang : 'fr') as Language;
     };

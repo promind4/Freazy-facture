@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { SplitScreen } from "@/components/layout/SplitScreen";
 import { InvoiceForm } from "@/components/invoice/InvoiceForm";
 import { InvoicePreview } from "@/components/invoice/InvoicePreview";
@@ -79,11 +79,11 @@ export function InvoicePage({ content }: InvoicePageProps) {
 
     return (
         <div className="flex flex-col min-h-screen bg-background">
-            <Helmet>
+            <Head>
                 <title>{content.metaTitle}</title>
                 <meta name="description" content={content.metaDescription} />
                 <link rel="canonical" href={`https://freazy.fr${content.slug === '/' ? '' : content.slug}`} />
-            </Helmet>
+            </Head>
 
 
 
